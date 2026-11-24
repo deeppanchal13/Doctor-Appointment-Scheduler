@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -36,9 +35,17 @@ int main()
     cout << "  DOCTOR APPOINTMENT SCHEDULER\n";
     cout << "================================\n";
 
-    Doctor d1(101, "Dr. Sharma", "Cardiology");
-    Doctor d2(102, "Dr. Verma", "Neurology");
-    d1.displayDoctor();
+    cout << "1. Display Doctors\n";
+    cout << "2. Book by Doctor ID and Slot\n";
+    cout << "3. Book by Doctor Name and Time\n";
+    cout << "4. Book by Speciality\n";
+    cout << "5. Cancel Appointment\n";
+    cout << "6. Display Daily Schedule\n";
+    cout << "7. Exit\n";
+
+    int choice;
+    cout << "\nEnter your choice: ";
+    cin >> choice;
 
     return 0;
 }
